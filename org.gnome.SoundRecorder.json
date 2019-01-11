@@ -24,7 +24,7 @@
                     "disable-shallow-clone" : true,
                     "url" : "https://gitlab.gnome.org/GNOME/gnome-sound-recorder.git",
                     "branch" : "gnome-3-28",
-                    "commit" : "721080149bb6e58fcae6f277fc8c37ddd30e1c49"
+                    "commit" : "2aad09e8acb9e6edfc5ec8520ad4b7684d8aee4b"
                 }
             ]
         }
