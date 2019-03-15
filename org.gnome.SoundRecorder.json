@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.SoundRecorder",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.28",
+    "runtime-version" : "3.30",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-sound-recorder",
     "finish-args" : [
@@ -23,8 +23,7 @@
                     "type" : "git",
                     "disable-shallow-clone" : true,
                     "url" : "https://gitlab.gnome.org/GNOME/gnome-sound-recorder.git",
-                    "branch" : "gnome-3-28",
-                    "commit" : "2aad09e8acb9e6edfc5ec8520ad4b7684d8aee4b"
+                    "branch" : "gnome-3-32"
                 }
             ]
         }
