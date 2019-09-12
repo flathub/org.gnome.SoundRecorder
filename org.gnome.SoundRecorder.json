@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.SoundRecorder",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.32",
+    "runtime-version" : "3.34",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-sound-recorder",
     "finish-args" : [
@@ -9,10 +9,6 @@
         "--socket=x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
         "--filesystem=home"
     ],
     "modules" : [
@@ -22,9 +18,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "disable-shallow-clone" : true,
                     "url" : "https://gitlab.gnome.org/GNOME/gnome-sound-recorder.git",
-                    "branch" : "gnome-3-32"
+                    "branch" : "gnome-3-34",
+                    "commit": "90f1c5cc36ff3c9472d2334cba857110dcd19d10"
                 }
             ]
         }
