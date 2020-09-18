@@ -9,7 +9,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-        "--filesystem=~/Recordings"
+        "--filesystem=~/Recordings",
         "--metadata=X-DConf=migrate-path=/org/gnome/SoundRecorder/"
     ],
     "modules" : [
