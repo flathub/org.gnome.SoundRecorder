@@ -1,27 +1,45 @@
 {
     "app-id" : "org.gnome.SoundRecorder",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.36",
+    "runtime-version" : "3.38",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-sound-recorder",
     "finish-args" : [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-        "--filesystem=home",
+        "--filesystem=~/Recordings",
         "--metadata=X-DConf=migrate-path=/org/gnome/SoundRecorder/"
     ],
     "modules" : [
+        {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dexamples=false",
+                "-Dprofiling=false",
+                "-Dglade_catalog=disabled",
+                "-Dintrospection=enabled",
+                "-Dtests=false",
+                "-Dvapi=false"
+            ],
+            "sources" : [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
+                    "sha256": "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
+                }
+            ]
+        },
         {
             "name" : "gnome-sound-recorder",
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gnome-sound-recorder.git",
-                    "branch" : "gnome-3-36",
-                    "commit": "27a1b440467fdabb41a8febc132585f2b8b4bc00"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-sound-recorder/3.38/gnome-sound-recorder-3.38.0.tar.xz",
+                    "sha256": "23903f7361be410870fba947209167b96f4907630641d33ccbaa8e42f574b699"
                 }
             ]
         }
