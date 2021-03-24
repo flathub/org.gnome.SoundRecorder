@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.SoundRecorder",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "3.38",
+    "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-sound-recorder",
     "finish-args" : [
@@ -27,8 +27,8 @@
             "sources" : [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.3.tar.xz",
-                    "sha256": "559bb3acc2c362488917eb72ed25bdc181f4ae26ac94d177634cc5d34c867f7a"
+                    "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.0.tar.xz",
+                    "sha256": "39f590ae20910e76fe1c0607b2ebe589750f45610d6aeec5c30e2ee602a20b25"
                 }
             ]
         },
@@ -38,8 +38,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://gitlab.gnome.org/GNOME/gnome-sound-recorder/uploads/5bf692e9ad5aa6c375b2a5dff21f11fe/gnome-sound-recorder-3.38.1.tar.xz",
-                    "sha256": "d99ea4f963ec1089e9cd597a7d44398a11ecef131e4142271a1c90c15baa4521"
+                    "url" : "https://download.gnome.org/sources/gnome-sound-recorder/40/gnome-sound-recorder-40.0.tar.xz",
+                    "sha256": "d4aa4c104d7465dd15807bf1703e65ff682eff52841c59cf3a07f5eff42e6501"
                 }
             ]
         }
