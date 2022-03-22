@@ -1,10 +1,11 @@
 {
     "app-id": "org.gnome.SoundRecorder",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-sound-recorder",
     "finish-args": [
+        "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
@@ -19,8 +20,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-sound-recorder/40/gnome-sound-recorder-40.0.tar.xz",
-                    "sha256": "d4aa4c104d7465dd15807bf1703e65ff682eff52841c59cf3a07f5eff42e6501",
+                    "url": "https://download.gnome.org/sources/gnome-sound-recorder/42/gnome-sound-recorder-42.0.tar.xz",
+                    "sha256": "4c08c315282f3ebf7a2da6f20e0ff9f0c71daa5229fcd2fe0b5c0aaaaa06f0ad",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-sound-recorder"
