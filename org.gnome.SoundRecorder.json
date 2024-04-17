@@ -26,6 +26,10 @@
                         "type": "gnome",
                         "name": "gnome-sound-recorder"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-appstream-Update-to-use-control-instead-of-custom.patch"
                 }
             ]
         }
