@@ -1,0 +1,28 @@
+diff --git a/data/org.gnome.SoundRecorder.metainfo.xml.in.in b/data/org.gnome.SoundRecorder.metainfo.xml.in.in
+index 0d89f0a..dfe5e81 100644
+--- a/data/org.gnome.SoundRecorder.metainfo.xml.in.in
++++ b/data/org.gnome.SoundRecorder.metainfo.xml.in.in
+@@ -98,15 +98,15 @@
+   </releases>
+   <launchable type="desktop-id">@app-id@.desktop</launchable>
+   <url type="homepage">https://wiki.gnome.org/Apps/SoundRecorder</url>
+-  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-sound-recorder/issues</url>
+-  <url type="donation">https://www.gnome.org/friends/</url>
+-  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
++  <url type="bugtracker">https://gitlab.gnome.org/World/vocalis/-/issues</url>
++  <url type="donation">https://www.gnome.org/donate/</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/World/vocalis/</url>
++  <url type="translate">https://l10n.gnome.org/module/vocalis/</url>
+   <project_group>GNOME</project_group>
+   <developer_name>The GNOME Project</developer_name>
+   <update_contact>meg387_at_gmail.com</update_contact>
+   <translation type="gettext">@gettext-package@</translation>
+   <custom>
+-    <value key="Purism::form_factor">workstation</value>
+     <value key="Purism::form_factor">mobile</value>
+   </custom>
+ </component>
+\ No newline at end of file
+--
+libgit2 1.7.2
+
